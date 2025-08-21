@@ -3,7 +3,7 @@ from sheets_helper import get_sheet
 from gpt_helper import ask_chatgpt
 
 SHEET_NAME = "Panduan Cust Support"
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 async def start(update, context):
     await update.message.reply_text("Hello 👋 Ask me anything from the support sheet!")
