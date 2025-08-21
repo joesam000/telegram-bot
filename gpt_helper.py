@@ -1,5 +1,5 @@
 from openai import OpenAI
-client = OpenAI(api_key="YOUR_OPENAI_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_KEY"))
 
 def ask_chatgpt(question, sheet_data):
     context = f"Here is the Google Sheet data:\n{sheet_data}\n\nAnswer the question using only this data. If not found, say 'Not found in sheet'."
