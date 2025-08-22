@@ -1,3 +1,4 @@
+import os
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from sheets_helper import get_sheet
 from gpt_helper import ask_chatgpt
