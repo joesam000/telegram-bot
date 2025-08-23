@@ -4,8 +4,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 from openai import OpenAI
 
 # Load API keys (replace or use environment variables)
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
-OPENAI_KEY = os.getenv("OPENAI_API_KEY", "YOUR_OPENAI_API_KEY")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=OPENAI_KEY)
 
