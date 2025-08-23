@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # Load API keys (replace or use environment variables)
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-OPENAI_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_KEY = os.getenv("OPENAI_KEY")
 
 client = OpenAI(api_key=OPENAI_KEY)
 
